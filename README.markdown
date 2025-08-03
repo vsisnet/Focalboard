@@ -10,34 +10,19 @@ Before running the script, ensure the following:
 - Your server has a **public IP address** and a **domain name** properly configured to point to the server's IP (required for Let's Encrypt SSL).
 - You have **internet access** to download dependencies and the Focalboard release.
 
-## Installation Steps
+## Installation
 
-1. **Clone or Download the Script**  
-   Clone this repository or download the `install-focalboard.sh` script directly:
-   ```bash
-   wget https://raw.githubusercontent.com/vsisnet/Focalboard/main/install-focalboard.sh
-   ```
+Run the following single command to download, make executable, and execute the installation script:
+```bash
+wget https://raw.githubusercontent.com/vsisnet/Focalboard/main/install-focalboard.sh && chmod +x install-focalboard.sh && sudo ./install-focalboard.sh
+```
 
-2. **Make the Script Executable**  
-   Grant execute permissions to the script:
-   ```bash
-   chmod +x install-focalboard.sh
-   ```
+During execution, the script will prompt you to enter:
+- **Domain**: Your domain name (e.g., `focalboard.example.com`).
+- **Email**: Your email address for Let's Encrypt SSL certificate notifications.
+- **PostgreSQL Password**: A secure password for the PostgreSQL `boardsuser` account.
 
-3. **Run the Script**  
-   Execute the script with sudo privileges:
-   ```bash
-   sudo ./install-focalboard.sh
-   ```
-
-4. **Provide Required Information**  
-   During execution, the script will prompt you to enter:
-   - **Domain**: Your domain name (e.g., `focalboard.example.com`).
-   - **Email**: Your email address for Let's Encrypt SSL certificate notifications.
-   - **PostgreSQL Password**: A secure password for the PostgreSQL `boardsuser` account.
-
-5. **Access Focalboard**  
-   Once the installation is complete, access Focalboard via your browser at `https://<your-domain>`.
+Once the installation is complete, access Focalboard via your browser at `https://<your-domain>`.
 
 ## What the Script Does
 
@@ -86,34 +71,19 @@ Trước khi chạy script, hãy đảm bảo:
 - Máy chủ của bạn có **địa chỉ IP công cộng** và **tên miền** được cấu hình chính xác để trỏ đến IP của máy chủ (yêu cầu cho Let's Encrypt SSL).
 - Máy chủ có **kết nối internet** để tải các phụ thuộc và bản phát hành Focalboard.
 
-## Các Bước Cài Đặt
+## Cài Đặt
 
-1. **Tải Script**  
-   Sao chép kho lưu trữ này hoặc tải trực tiếp script `install-focalboard.sh`:
-   ```bash
-   wget https://raw.githubusercontent.com/vsisnet/Focalboard/main/install-focalboard.sh
-   ```
+Chạy lệnh duy nhất sau để tải, cấp quyền thực thi và thực thi script cài đặt:
+```bash
+wget https://raw.githubusercontent.com/vsisnet/Focalboard/main/install-focalboard.sh && chmod +x install-focalboard.sh && sudo ./install-focalboard.sh
+```
 
-2. **Cấp Quyền Thực Thi**  
-   Cấp quyền thực thi cho script:
-   ```bash
-   chmod +x install-focalboard.sh
-   ```
+Trong quá trình chạy, script sẽ yêu cầu bạn nhập:
+- **Tên miền**: Tên miền của bạn (ví dụ: `focalboard.example.com`).
+- **Email**: Địa chỉ email để nhận thông báo chứng chỉ SSL từ Let's Encrypt.
+- **Mật khẩu PostgreSQL**: Mật khẩu an toàn cho tài khoản `boardsuser` của PostgreSQL.
 
-3. **Chạy Script**  
-   Thực thi script với quyền sudo:
-   ```bash
-   sudo ./install-focalboard.sh
-   ```
-
-4. **Cung Cấp Thông Tin Yêu Cầu**  
-   Trong quá trình chạy, script sẽ yêu cầu bạn nhập:
-   - **Tên miền**: Tên miền của bạn (ví dụ: `focalboard.example.com`).
-   - **Email**: Địa chỉ email để nhận thông báo chứng chỉ SSL từ Let's Encrypt.
-   - **Mật khẩu PostgreSQL**: Mật khẩu an toàn cho tài khoản `boardsuser` của PostgreSQL.
-
-5. **Truy Cập Focalboard**  
-   Sau khi cài đặt hoàn tất, truy cập Focalboard qua trình duyệt tại `https://<tên-miền-của-bạn>`.
+Sau khi cài đặt hoàn tất, truy cập Focalboard qua trình duyệt tại `https://<tên-miền-của-bạn>`.
 
 ## Script Thực Hiện Những Gì
 
